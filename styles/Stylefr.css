@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 166, 188, 0.5);
+    background: #0e0e0e;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0ef;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #eee;
+    border-bottom: 1px solid #00ffff;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    width: 600%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #0ef, #c800ff);
+    color: #fff;
+  }
+  
+  .banner {
+    position: relative;
+    height: 90px;
+    background: linear-gradient(to right, #0ef, #c800ff);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Cambiado a un rectángulo */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .wel_text {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;   
+    font-weight: bold;
+    color: #eee;
+  }
+  
+  
+  .para {
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    color: #eee;
+    top: 45px; /* Ajusta la distancia desde la parte superior */
+    font-weight: bold; /* Agregado para hacer el texto en negrita */
+  }
+
+  .second-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
