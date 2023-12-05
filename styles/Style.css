@@ -1,4 +1,4 @@
-*{
+**{
     margin: 0;
     padding: 0;
     font-family: arial;
@@ -20,7 +20,7 @@ body{
 
 .wraper{
     position: relative;
-    width: 800px;
+    width: 750px;
     height: 65vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,16 +40,23 @@ body{
     border-bottom: 2px solid #eee;
 }
 
-.input{
+.inp {
+    position: relative; /* Se añade posición relativa para permitir el posicionamiento del borde */
+  }
+  
+  .input {
     border: none;
     outline: none;
     background: none;
     width: 260px;
     margin-top: 40px;
     padding-right: 10px;
+    padding-bottom: 5px;
     font-size: 17px;
     color: #0ef;
-}
+    border-bottom: 2px solid #eee; /* Se añade un borde inferior de color #eee */
+  }
+  
 
 .submit{
     border: none;
@@ -58,6 +65,7 @@ body{
     margin-top: 25px;
     padding: 10px 0;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 40px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -71,7 +79,7 @@ body{
 }
 
 .link{
-    color: #0ef;
+    color: #c800ff;
     text-decoration: none;
 }
 
@@ -103,3 +111,14 @@ body{
     line-height: 24px;
     letter-spacing: 1px;
 }
+
+.second-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
