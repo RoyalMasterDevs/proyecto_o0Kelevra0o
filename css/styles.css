@@ -21,6 +21,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.orb {
+  font-family: "Roboto", sans-serif;
+}
+
 ::-webkit-input-placeholder {
   color: #eee;
 }
