@@ -1,0 +1,382 @@
+** {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background: #081b29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.orb {
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.wrapper {
+  display: flex; /* Cambiado de grid a flex */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 166, 188, 0.5);
+  background: #0e0e0e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0ef;
+}
+
+.tittle {
+  font-size: 24px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.inp {
+  position: relative; /* Se añade posición relativa para permitir el posicionamiento del borde */
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 260px;
+  margin-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  color: #0ef;
+  border-bottom: 2px solid #eee; /* Se añade un borde inferior de color #eee */
+}
+
+.submit {
+  border: none;
+  outline: none;
+  width: 288px;
+  margin-top: 25px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #0ef, #c800ff);
+}
+
+.footer {
+  margin-top: 53px;
+  margin-bottom: 1px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.link {
+  color: #c800ff;
+  text-decoration: none;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100;
+  background: linear-gradient(to right, #0ef, #c800ff);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+  padding-right: 70px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.wel_text {
+  font-size: 32px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+  color: #eee;
+}
+
+.para {
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  color: #eee;
+  top: 45px; /* Ajusta la distancia desde la parte superior */
+  font-weight: bold; /* Agregado para hacer el texto en negrita */
+}
+
+.second-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Archivo style1.css */
+:root {
+  --glow-color: #01fff4;
+  --black: #1a1e23;
+  --shadow: #ffffff50;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+}
+.neon-btn {
+  margin-top: 30px;
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.35em 2.2em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.8em;
+  background: none;
+  perspective: 2em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1em;
+  box-shadow: inset 0 0 0.5em var(--glow-color), 0 0 0.5em var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+}
+.neon-text {
+  float: left;
+  margin-right: -0.8em;
+  text-shadow: 0 0 0.125em var(--shadow), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+.neon-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  background: var(--glow-color);
+  pointer-events: none;
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+}
+.neon-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 0.6em;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+.neon-btn:hover {
+  color: var(--black);
+  text-shadow: none;
+  animation: none;
+}
+.neon-btn:hover .neon-text {
+  animation: none;
+}
+.neon-btn:hover::before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+.neon-btn:hover::after {
+  opacity: 1;
+}
+.neon-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.1;
+  }
+  9% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+    max-width: 432px;
+  }
+
+  .inp {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .neon-btn {
+    width: 76%;
+  }
+
+  .footer {
+    margin-top: 47px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+    max-width: 363px;
+  }
+
+  .inp {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .neon-btn {
+    width: 90.5%;
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 47px;
+    font-size: 12px;
+  }
+}
